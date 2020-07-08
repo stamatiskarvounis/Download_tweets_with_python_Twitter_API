@@ -13,10 +13,13 @@ You will be able to generate "Consumer API keys" and "Access token & access toke
 You are good to go
 ## Python
 ### 1. Importing libraries
+```
 import tweepy
 import csv
 import pandas as pd
+```
 ### 2. insert App credentials
+```
 consumer_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #insert your API key
 consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #insert your API secret key
 access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #insert Access token
@@ -24,14 +27,18 @@ access_token_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #Access token secret
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
+```
 ### 3. Create a csv.file that will hold all the downloaded tweets
+```
 csvFile = open('tweets.csv', 'a')
+```
 ### 4. Write tweets in the csv file
+```
 csvWriter = csv.writer(csvFile)
 for tweet in tweepy.Cursor(api.search,q="#xxxx",count=100,   # instead of xxxx you can use any hashtag of your choise
                            lang="en",
                            since="xxxx-xx-xx").items():     #xxxx-xx-xx use date(you can go back 2 weeks before present date)
     print (tweet.created_at, tweet.text, 'utf-8')
     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
-    
+```
    

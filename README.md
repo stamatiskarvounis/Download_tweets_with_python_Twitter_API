@@ -46,6 +46,6 @@ You will be able to search for tweets 2 weeks back
 
 If you have feedback on the code, I'd love to hear it  
 
-Ejoy!
+Enjoy!
 
    

@@ -20,14 +20,15 @@ import pandas as pd
 ```
 ### 2. insert App credentials
 ```
-consumer_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #insert your API key
-consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #insert your API secret key
-access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #insert Access token
-access_token_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #Access token secret
+consumer_key = 'insert your API key'
+consumer_secret = 'insert your API secret key'
+access_token = 'insert your Access token'
+access_token_secret = 'insert yourAccess token secret'
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
 ```
+
 ### 3. Create a csv.file that will hold all the downloaded tweets
 ```
 csvFile = open('tweets.csv', 'a')
@@ -35,10 +36,13 @@ csvFile = open('tweets.csv', 'a')
 ### 4. Write tweets in the csv file
 ```
 csvWriter = csv.writer(csvFile)
-for tweet in tweepy.Cursor(api.search,q="#xxxx",count=100,   # instead of xxxx you can use any hashtag of your choise
+for tweet in tweepy.Cursor(api.search,q="#yourhashtag",count=100,
                            lang="en",
-                           since="xxxx-xx-xx").items():     #xxxx-xx-xx use date(you can go back 2 weeks before present date)
+                           since="year-mm-dd").items():
     print (tweet.created_at, tweet.text, 'utf-8')
     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
 ```
+You will be able to search for tweets 2 weeks back  
+If you have feedback on the code, I'd love to hear it  
+Ejoy!
    

@@ -6,11 +6,11 @@ Go to: https://developer.twitter.com/en/apply-for-access and apply for a develop
 Once you get access to your developer account you will be able to use Twitter API for your project.  
 You should read the "Restricted use cases" before starting your project just to be on the safe side.  
 ### 2. Create an App  
-While logged in go to: https://developer.twitter.com/en/apps/create
-Give a description of your project and fill the required fields
-Once you have your new app you will be able to access it. Inside your app there is a tab called "Keys and Tokens".
-You will be able to generate "Consumer API keys" and "Access token & access token secret". These series of codes will be used later for downloading live tweets
-You are good to go
+While logged in go to: https://developer.twitter.com/en/apps/create  
+Give a description of your project and fill the required fields.    
+Once you have your new app you will be able to access it. Inside your app there is a tab called "Keys and Tokens".  
+You will be able to generate "Consumer API keys" and "Access token & access token secret". These series of codes will be used later for downloading live tweets.  
+You are good to go  
 ## Python
 ### 1. Importing libraries
 ```

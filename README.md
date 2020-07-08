@@ -1,11 +1,11 @@
 # Download_tweets_with_python_Twitter_API
 Tutorial for downloading live tweets from Twitter API with python tweepy<br/>
 Twitter  
-1. Create Twitter Developer Account
-Go to: https://developer.twitter.com/en/apply-for-access and apply for a developer account.
-Once you get access to your developer account you will be able to use Twitter API for your project.
-You should read the "Restricted use cases" before starting your project just to be on the safe side.
-2. Create an App
+1. Create Twitter Developer Account  
+Go to: https://developer.twitter.com/en/apply-for-access and apply for a developer account.  
+Once you get access to your developer account you will be able to use Twitter API for your project.  
+You should read the "Restricted use cases" before starting your project just to be on the safe side.  
+2. Create an App  
 While logged in go to: https://developer.twitter.com/en/apps/create
 Give a description of your project and fill the required fields
 Once you have your new app you will be able to access it. Inside your app there is a tab called "Keys and Tokens".

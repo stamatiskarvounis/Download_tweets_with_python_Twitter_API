@@ -10,7 +10,6 @@ While logged in go to: https://developer.twitter.com/en/apps/create
 * Give a description of your project and fill the required fields.    
 * Once you have your new app you will be able to access it. Inside your app there is a tab called "Keys and Tokens".  
 * You will be able to generate "Consumer API keys" and "Access token & access token secret". These series of codes will be used later for downloading live tweets.  
-You are good to go  
 ## Python
 ### 1. Importing libraries
 ```
@@ -42,7 +41,11 @@ for tweet in tweepy.Cursor(api.search,q="#yourhashtag",count=100,
     print (tweet.created_at, tweet.text, 'utf-8')
     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
 ```
+
 You will be able to search for tweets 2 weeks back  
+
 If you have feedback on the code, I'd love to hear it  
+
 Ejoy!
+
    

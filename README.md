@@ -48,3 +48,5 @@ for tweet in tweepy.Cursor(api.search,q="#xxxx",count=100,   # instead of xxxx y
                            since="xxxx-xx-xx").items():     #xxxx-xx-xx use date(you can go back 2 weeks before present date)
     print (tweet.created_at, tweet.text, 'utf-8')
     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
+    
+   
